@@ -10,26 +10,33 @@
   </head>
   <body>
     <main class="container">
-      <div class="search-box">
-        <input type="text" placeholder="Type the pókemon">
+      <header class="search-box">
+        <input id="pokemon" type="text" placeholder="Search the pókemon">
         <button class="fa-solid fa-magnifying-glass" id="poke-search"></button>
-      </div>
+      </header>
       <div class="not-found">
         <img src="media/D5WVXQHXkAE_Wzn.png" alt="Error">
         <p>Invalid pókemon, try again!</p>
       </div>
       <div class="poke-box">
         <div class="name">
-          <img src="media/pokeball.png" alt="">
-          <p>ID</p>
+          <img src="media/pokeball.png" alt="pokeball">
+          <p id="poke-name"></p>
         </div>
+        <img src="" id="poke-img">
       </div>
       <footer class="poke-details">
         <div class="poke-type">
-
+          <i class="fa-solid fa-circle-info"></i>
+          <div class="text">
+            <span></span>
+          </div>
         </div>
         <div class="poke-move">
-          
+          <i class="fa-solid fa-bolt"></i>
+          <div class="text">
+            <span></span>
+          </div>
         </div>
       </footer>
     </main>

@@ -16,7 +16,7 @@ body {
 .container {
     position: relative;
     width: 400px;
-    height: 520px; /* default is 120px */
+    height: 100px; /* default is 100px */
     background-color: #fff;
     padding: 20px 32px;
     overflow: hidden;
@@ -74,7 +74,7 @@ body {
 }
 /* Poke box */
 .poke-box {
-    width: 60%;
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -82,8 +82,61 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-transform: uppercase;
 }
 .poke-box .name p {
+    color: #06283D;
     font-size: 24px;
     font-weight: 500;
+}
+.poke-box #poke-img {
+    display: block;
+    padding: 20px;
+    height: 300px;
+    min-width: 100%;
+}
+/* Poke details */
+.poke-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.poke-type, .poke-move {
+    color: #06283D;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    gap: 10px;
+}
+.poke-type {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.poke-type span {
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+}
+.poke-move {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+#poke-button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.fade-in {
+    animation: .5s  fadeIn forwards;
+    animation-delay: .5s;
+}
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
