@@ -23,6 +23,21 @@ body {
     border-radius: 18px;
     transition: .6s ease-out;
 }
+@media (max-width: 375px) {
+    .container {
+        width: 320px;
+        padding: 20px;
+    }
+    #poke-name {
+        font-size: 18px;
+    }
+    #poke-img {
+        width: 100%;
+    }
+    .poke-type .text span, .poke-move .text span{
+        font-size: 14px;
+    }
+}
 .title {
     margin-bottom: 10px;
 }
@@ -100,7 +115,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 .poke-type, .poke-move {
@@ -116,9 +131,10 @@ body {
     padding-left: 20px;
     justify-content: flex-start;
 }
-.poke-type span {
+.poke-type span , .poke-move span{
+    width: 100%;
     color: #06283D;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 .poke-move {
