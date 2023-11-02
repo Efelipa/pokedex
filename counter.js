@@ -31,7 +31,7 @@ const searchPokemon = () => {
     move.innerHTML = `${json.moves['0'].move.name}`;
     move.style.textTransform = 'capitalize'
   }
-  let pokemon = document.querySelector('#pokemon').value;
+  let pokemon = document.querySelector('#pokemon').value.toLowerCase();
   const API = `https://pokeapi.co/api/v2/pokemon/${pokemon}/`;
 
   if(pokemon === '') return;
