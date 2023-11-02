@@ -25,3 +25,5 @@ pnpm run dev
 ## Images
 ![Pokeball](https://efelipa-pokedex.netlify.app/media/pokeball.png)
 
+## Link 
+https://efelipa-pokedex.netlify.app/ 
